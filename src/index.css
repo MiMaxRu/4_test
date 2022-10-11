@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-image: url(https://flagfs.ru/content/flagi-stran/brit.jpg);
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.App {
+  width: 500px;
+  border-radius: 30px;
+  padding: 40px;
+  background-color: rgb(239, 239, 239);
+  position: relative;
+}
+
+.result {
+  text-align: center;
+}
+
+.result button {
+  background-color: #ff8a8a;
+  font-weight: bold;
+  font-family: 'Nunito', sans-serif;
+  border-radius: 30px;
+  border: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  cursor: pointer;
+  transition:0.2s;
+}
+
+.result a button:hover {
+  background-color: #ff2626;
+}
+
+
+.result h2 {
+  margin-bottom: 0;
+}
+
+.result img {
+  width: 150px;
+}
+
+.progress {
+  height: 10px;
+  border-radius: 30px;
+  background-color: rgb(232, 232, 232);
+  margin-bottom: 25px;
+
+}
+
+.progress__inner {
+  height: 100%;
+  border-radius: 30px;
+  width: 80%;
+  background: rgb(18, 231, 48);
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, rgba(18, 231, 48, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.App:after {
+  content: '';
+  display: block;
+  height: 50px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+
+
+.App h1 {
+  margin: 0;
+}
+
+.App ul {
+  list-style: none;
+  padding: 0;
+}
+
+.App ul li {
+  padding: 15px;
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+
+}
+
+.App ul :hover {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+}
